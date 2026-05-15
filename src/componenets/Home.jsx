@@ -31,16 +31,18 @@ export default function ProfessionalCarousel() {
   }, []);
 
   return (
-    <div className="w-full max-w-full overflow-hidden">
+    <div className="w-full max-w-full overflow-hidden pt-20">
       <div className="relative w-full overflow-hidden">
         <div className="relative w-full">
 
           {/* Slide Image */}
-          <img
-            src={images[current].src}
-            alt={`Slide ${current + 1}`}
-            className="w-full h-auto block object-cover transition-all duration-700"
-          />
+          <div className="w-full overflow-hidden">
+            <img
+              src={images[current].src}
+              alt={`Slide ${current + 1}`}
+              className="w-full h-auto object-contain transition-all duration-700"
+            />
+          </div>
 
           {/* Left Arrow */}
           <button
