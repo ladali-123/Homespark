@@ -1,8 +1,5 @@
-import {
-    FacebookIcon,
-    Instagram,
-    Youtube,
-} from "lucide-react";
+import { FacebookIcon, InstagramIcon, YoutubeIcon } from "./FooterIcons";
+
 
 import logo from "../assets/logo.png";
 
@@ -98,20 +95,21 @@ export default function Footer() {
                             className="w-11 h-11 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[#0A2E73] transition duration-300"
                         >
                             <FacebookIcon size={20} />
+
                         </a>
 
                         <a
                             href="#"
                             className="w-11 h-11 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[#0A2E73] transition duration-300"
                         >
-                            <Instagram size={20} />
+                            <InstagramIcon size={20} />
                         </a>
 
                         <a
                             href="#"
                             className="w-11 h-11 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[#0A2E73] transition duration-300"
                         >
-                            <Youtube size={20} />
+                            <YoutubeIcon size={20} />
                         </a>
                     </div>
 
