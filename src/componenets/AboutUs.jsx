@@ -7,5 +7,3 @@ const Aboutus = () => {
     </div>
   )
 }
-
-export default Aboutus
