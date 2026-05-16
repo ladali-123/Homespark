@@ -39,6 +39,7 @@ export default function Navbar() {
                 e.target.nextSibling.style.display = "flex";
               }}
             />
+
             {/* Fallback */}
             <div className="hidden items-center gap-2" style={{ display: "none" }}>
               <div className="h-9 w-9 rounded-lg bg-blue-600 flex items-center justify-center">
@@ -55,22 +56,36 @@ export default function Navbar() {
                 <a
                   href={link.href}
                   className="
-    relative px-5 py-2 text-lg font-semibold text-gray-800
-    hover:text-gray-900
-    hover:underline
-    hover:decoration-gray-500
-    hover:decoration-2
-    hover:underline-offset-4
-  "
+                    relative px-5 py-2 text-lg font-semibold text-gray-800
+                    hover:text-gray-900
+                    hover:underline
+                    hover:decoration-gray-500
+                    hover:decoration-2
+                    hover:underline-offset-4
+                    transition-all duration-200
+                  "
                 >
                   {link.label}
                 </a>
               </li>
             ))}
 
-            {/* CTA Button */}
-            <li className="ml-3">
-
+            {/* Our Service Button */}
+            <li className="ml-4">
+              <a
+                href="#"
+                className="
+                  px-6 py-2.5 rounded-xl
+                  bg-orange-500 text-white
+                  font-semibold text-base
+                  shadow-md
+                  hover:bg-orange-600
+                  hover:scale-105
+                  transition-all duration-300
+                "
+              >
+                Our Service
+              </a>
             </li>
           </ul>
 
@@ -82,13 +97,16 @@ export default function Navbar() {
               transition-colors duration-200 gap-1.5 hover:bg-gray-300"
             aria-label="Toggle menu"
           >
-            <span className={`block h-0.5 w-5 bg-gray-700 rounded-full transition-all duration-300
+            <span
+              className={`block h-0.5 w-5 bg-gray-700 rounded-full transition-all duration-300
               ${menuOpen ? "rotate-45 translate-y-2" : ""}`}
             />
-            <span className={`block h-0.5 w-5 bg-gray-700 rounded-full transition-all duration-300
+            <span
+              className={`block h-0.5 w-5 bg-gray-700 rounded-full transition-all duration-300
               ${menuOpen ? "opacity-0 scale-x-0" : ""}`}
             />
-            <span className={`block h-0.5 w-5 bg-gray-700 rounded-full transition-all duration-300
+            <span
+              className={`block h-0.5 w-5 bg-gray-700 rounded-full transition-all duration-300
               ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`}
             />
           </button>
@@ -97,34 +115,51 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {/* Mobile Menu */}
-<div
-  className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out
-  ${menuOpen ? "max-h-96" : "max-h-0 pointer-events-none"}`}
->
-  <ul className="bg-gray-100 border-t border-gray-300 px-4 py-3 flex flex-col gap-2">
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out
+        ${menuOpen ? "max-h-[500px]" : "max-h-0 pointer-events-none"}`}
+      >
+        <ul className="bg-gray-100 border-t border-gray-300 px-4 py-4 flex flex-col gap-3">
 
-    {navLinks.map((link) => (
-      <li key={link.label}>
-        <a
-          href={link.href}
-          className="
-            relative px-5 py-2 text-lg font-semibold text-gray-800
-            inline-block
-            hover:text-gray-900
-            hover:underline
-            hover:decoration-gray-500
-            hover:decoration-2
-            hover:underline-offset-4
-          "
-        >
-          {link.label}
-        </a>
-      </li>
-    ))}
+          {navLinks.map((link) => (
+            <li key={link.label}>
+              <a
+                href={link.href}
+                className="
+                  relative px-5 py-2 text-lg font-semibold text-gray-800
+                  inline-block
+                  hover:text-gray-900
+                  hover:underline
+                  hover:decoration-gray-500
+                  hover:decoration-2
+                  hover:underline-offset-4
+                "
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
 
-  </ul>
-</div>
+          {/* Mobile Button */}
+          <li className="pt-2">
+            <a
+              href="#"
+              className="
+                block text-center
+                w-full px-6 py-3 rounded-xl
+                bg-orange-500 text-white
+                font-semibold text-base
+                shadow-md
+                hover:bg-orange-600
+                transition-all duration-300
+              "
+            >
+              Our Service
+            </a>
+          </li>
+
+        </ul>
+      </div>
     </nav>
   );
 }
