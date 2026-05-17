@@ -1,9 +1,10 @@
 import React from "react";
 
-// lucide-react versions me Facebook/Instagram/Youtube exports consistently available nahi hote.
+// lucide-react versions me Facebook/Instagram/Youtube exports
+// consistently available nahi hote.
 // Is file me safe fallback icons diye gaye hain taaki Footer build crash na ho.
 
-export function FacebookIcon(props) {
+function FacebookIcon(props) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -16,7 +17,7 @@ export function FacebookIcon(props) {
   );
 }
 
-export function InstagramIcon(props) {
+function InstagramIcon(props) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -29,7 +30,7 @@ export function InstagramIcon(props) {
   );
 }
 
-export function YoutubeIcon(props) {
+function YoutubeIcon(props) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -42,3 +43,45 @@ export function YoutubeIcon(props) {
   );
 }
 
+export default function FooterIcons() {
+  return (
+    <footer className="bg-gray-900 text-white py-6">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-4">
+
+        <h2 className="text-xl font-semibold">
+          Follow Us
+        </h2>
+
+        <div className="flex items-center gap-6">
+
+          <a
+            href="#"
+            className="hover:text-blue-400 transition duration-300"
+          >
+            <FacebookIcon className="w-7 h-7" />
+          </a>
+
+          <a
+            href="#"
+            className="hover:text-pink-400 transition duration-300"
+          >
+            <InstagramIcon className="w-7 h-7" />
+          </a>
+
+          <a
+            href="#"
+            className="hover:text-red-500 transition duration-300"
+          >
+            <YoutubeIcon className="w-7 h-7" />
+          </a>
+
+        </div>
+
+        <p className="text-sm text-gray-400">
+          © 2025 Home Spark. All rights reserved.
+        </p>
+
+      </div>
+    </footer>
+  );
+}

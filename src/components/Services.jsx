@@ -97,31 +97,33 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="relative overflow-hidden rounded-[32px] bg-[#f4f8ff] py-10 px-4 sm:px-6 lg:px-10">
+    <section className="relative overflow-hidden rounded-[32px] bg-[#f7f6f5] py-10 px-4 sm:px-6 lg:px-10">
 
       {/* Background Glow */}
-      <div className="absolute top-0 left-0 h-80 w-80 rounded-full bg-blue-300/20 blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-cyan-300/20 blur-3xl"></div>
+      <div className="absolute top-0 left-0 h-80 w-80 rounded-full bg-orange-300/20 blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-orange-300/20 blur-3xl"></div>
 
       {/* Grid Pattern */}
-      <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#2563eb_1px,transparent_1px),linear-gradient(to_bottom,#2563eb_1px,transparent_1px)] bg-[size:48px_48px]"></div>
+      <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(to_right,#2563eb_1px,transparent_1px),
+      linear-gradient(to_bottom,#2563eb_1px,transparent_1px)] bg-[size:48px_48px]"></div>
 
       <div className="relative z-10 mx-auto max-w-7xl">
 
         {/* Heading */}
         <div className="mb-8 text-center">
 
-          <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-blue-200 bg-white/80 px-5 
-          py-2 text-[11px] font-bold uppercase tracking-[3px] text-blue-600 shadow-sm backdrop-blur-md">
-            <span className="h-[1px] w-5 bg-blue-300"></span>
+          <div className="mb-5 inline-flex items-center gap-3 rounded-full border border-orange-200
+           bg-white/80 px-5 
+          py-2 text-[11px] font-bold uppercase tracking-[3px] text-orange-500 shadow-sm backdrop-blur-md">
+            <span className="h-[1px] w-5 bg-orange-300"></span>
             Why Choose Us
-            <span className="h-[1px] w-5 bg-blue-300"></span>
+            <span className="h-[1px] w-5 bg-orange-300"></span>
           </div>
 
           <h2 className="mx-auto max-w-[760px] text-3xl font-extrabold leading-[1.05] tracking-[-2px]
            text-slate-900 sm:text-3xl lg:text-4xl">
             Smart Solutions For{" "}
-            <span className="bg-gradient-to-r from-blue-600 via-violet-600 to-cyan-500 bg-clip-text 
+            <span className="bg-gradient-to-r from-orange-500 via-orange-600 to-orange-600 bg-clip-text 
             text-transparent">
               Pure & Safe Water
             </span>
@@ -141,27 +143,28 @@ export default function ServicesSection() {
               className="
                 group relative overflow-hidden
                 rounded-[28px]
-                border border-blue-200/70
+                border border-orange-200/70
                 bg-white
                 p-6 text-center
                 shadow-[0_8px_30px_rgba(15,23,42,0.08)]
                 transition-all duration-300
                 hover:-translate-y-2
-                hover:border-blue-400
+                hover:border-orange-400
                 hover:shadow-[0_20px_60px_rgba(37,99,235,0.18)]
               "
             >
               {/* Premium Glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-cyan-50 opacity-90"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-cyan-50 opacity-90"></div>
 
               {/* Hover Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 via-transparent to-violet-500/10 opacity-0 transition duration-300 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-600/5 via-transparent to-violet-300/10 opacity-0 transition duration-300 group-hover:opacity-100"></div>
 
               {/* Top Border */}
-              <div className="absolute top-0 left-0 h-[3px] w-full bg-gradient-to-r from-blue-600 via-cyan-400 to-violet-500"></div>
+              <div className="absolute top-0 left-0 h-[3px] w-full bg-gradient-to-r from-orange-600
+               via-orange-400 to-orange-500"></div>
 
               {/* Number */}
-              <span className="absolute right-4 top-3 text-[10px] font-bold tracking-wider text-blue-300">
+              <span className="absolute right-4 top-3 text-[10px] font-bold tracking-wider text-orange-300">
                 0{index + 1}
               </span>
 
@@ -171,18 +174,18 @@ export default function ServicesSection() {
                   relative z-10 mx-auto mb-5
                   flex h-16 w-16 items-center justify-center
                   rounded-2xl
-                  border border-blue-100
-                  bg-gradient-to-br from-blue-50 to-cyan-50
+                  border border-orange-100
+                  bg-gradient-to-br from-orange-50 to-cyan-50
                   shadow-inner
                   transition-all duration-300
                   group-hover:scale-110
-                  group-hover:border-blue-500
-                  group-hover:from-blue-600
-                  group-hover:to-cyan-500
+                  group-hover:border-orange-500
+                  group-hover:from-orange-600
+                  group-hover:to-orange-500
                   group-hover:shadow-[0_10px_30px_rgba(37,99,235,0.35)]
                 "
               >
-                <div className="h-7 w-7 stroke-blue-600 transition-all duration-300 group-hover:stroke-white">
+                <div className="h-7 w-7 stroke-orange-600 transition-all duration-300 group-hover:stroke-white">
                   {service.icon}
                 </div>
               </div>
@@ -197,14 +200,14 @@ export default function ServicesSection() {
                 className="
                   relative z-10 mx-auto mt-5
                   h-[3px] w-8 rounded-full
-                  bg-gradient-to-r from-blue-600 to-violet-500
+                  bg-gradient-to-r from-orange-600 to-orange-500
                   transition-all duration-300
                   group-hover:w-14
                 "
               ></div>
 
               {/* Extra Border Glow */}
-              <div className="absolute inset-0 rounded-[28px] ring-1 ring-blue-100/50 group-hover:ring-blue-300/60"></div>
+              <div className="absolute inset-0 rounded-[28px] ring-1 ring-orange-100/50 group-hover:ring-orange-300/60"></div>
             </div>
           ))}
         </div>

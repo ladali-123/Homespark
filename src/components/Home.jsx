@@ -45,43 +45,19 @@ export default function ProfessionalCarousel() {
       <div className="relative w-full overflow-hidden">
 
         {/* Slider Container */}
-        <div
-          className="
-            relative w-full
-            h-[220px]
-            sm:h-[320px]
-            md:h-[420px]
-            lg:h-[500px]
-            xl:h-[550px]
-            overflow-hidden
-          "
-        >
+        <div className="relative w-full aspect-[1672/613] overflow-hidden">
 
           {/* Image */}
           <img
             src={images[current].src}
             alt={`Slide ${current + 1}`}
-            className="
-              w-full h-full
-              object-cover
-              transition-all duration-700
-            "
+            className="w-full h-full object-fill transition-all duration-700"
           />
 
           {/* Left Arrow */}
           <button
             onClick={prevSlide}
-            className="
-              absolute top-1/2 left-2 sm:left-3
-              -translate-y-1/2
-              bg-white/80 hover:bg-white
-              text-black
-              p-1.5 sm:p-2
-              rounded-full
-              shadow-lg
-              transition duration-300
-              z-10
-            "
+            className="absolute top-1/2 left-2 sm:left-3 -translate-y-1/2 bg-white/80 hover:bg-white text-black p-1.5 sm:p-2 rounded-full shadow-lg transition duration-300 z-10"
           >
             <ChevronLeft size={18} className="sm:w-5 sm:h-5" />
           </button>
@@ -89,17 +65,7 @@ export default function ProfessionalCarousel() {
           {/* Right Arrow */}
           <button
             onClick={nextSlide}
-            className="
-              absolute top-1/2 right-2 sm:right-3
-              -translate-y-1/2
-              bg-white/80 hover:bg-white
-              text-black
-              p-1.5 sm:p-2
-              rounded-full
-              shadow-lg
-              transition duration-300
-              z-10
-            "
+            className="absolute top-1/2 right-2 sm:right-3 -translate-y-1/2 bg-white/80 hover:bg-white text-black p-1.5 sm:p-2 rounded-full shadow-lg transition duration-300 z-10"
           >
             <ChevronRight size={18} className="sm:w-5 sm:h-5" />
           </button>
@@ -110,14 +76,11 @@ export default function ProfessionalCarousel() {
               <button
                 key={index}
                 onClick={() => setCurrent(index)}
-                className={`
-                  transition-all duration-300 rounded-full
-                  ${
-                    current === index
-                      ? "w-5 sm:w-6 h-2 bg-white"
-                      : "w-2 h-2 bg-white/50"
-                  }
-                `}
+                className={`transition-all duration-300 rounded-full ${
+                  current === index
+                    ? "w-5 sm:w-6 h-2 bg-white"
+                    : "w-2 h-2 bg-white/50"
+                }`}
               />
             ))}
           </div>

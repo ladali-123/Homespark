@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-[#0A2E73] text-white pt-14 pb-6 px-4 overflow-hidden">
+        <footer className="w-full bg-[#852e0c] text-white pt-14 pb-6 px-4 overflow-hidden">
 
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
@@ -14,7 +14,7 @@ export default function Footer() {
                     <img
                         src={logo}
                         alt="Nexus Logo"
-                        className="w-[180px] mb-6"
+                        className="w-[200px] mb-6"
                     />
 
                     <p className="text-gray-200 leading-8 text-[15px]">
