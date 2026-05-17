@@ -15,7 +15,30 @@ const images = [
   { id: 5, src: car5 },
 ];
 
-export default function ProfessionalCarousel() {
+import AboutUs from "./AboutUs";
+import Services from "./Services";
+import Products from "./Products";
+import ProductInfo from "./ProductInfo";
+import Blog from "./Blog";
+import Review from "./Review";
+import ContactUs from "./ContactUs";
+
+export default function Home() {
+  return (
+    <div className="flex flex-col">
+      <HomeCarousel />
+      <AboutUs />
+      <Services />
+      <Products />
+      <ProductInfo />
+      <Blog />
+      <Review/>
+      <ContactUs />
+    </div>
+  );
+}
+
+function HomeCarousel() {
   const [current, setCurrent] = useState(0);
 
   const prevSlide = () => {

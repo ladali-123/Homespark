@@ -4,9 +4,10 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import ContactUs from "./components/ContactUs";
-import Services from "./components/Services";
+import ServicePage from "./components/ServicePage";
 import Products from "./components/Products";
 import Blog from "./components/Blog";
+import Review from "./components/Review";
 import Footer from "./components/Footer";
 
 
@@ -18,14 +19,15 @@ function App() {
       <Navbar />
 
       {/* Main Content */}
-      <main className="flex-grow pt-20">
+      <main className="flex-grow ">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/services" element={<Services />} />
+          <Route path="/servicepage" element={<ServicePage />} />
           <Route path="/products" element={<Products />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/review" element={<Review />} />
         </Routes>
       </main>
 

@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Products", path: "/products" },
   { label: "Blog", path: "/blog" },
   { label: "Contact Us", path: "/contact" },
+ 
 ];
 
 export default function Navbar() {
@@ -82,7 +83,7 @@ export default function Navbar() {
             {/* Service Button */}
             <li className="ml-4">
               <Link
-                to="/services"
+                to="/servicepage"
                 className="
                   px-6 py-2.5 rounded-xl
                   bg-orange-500 text-white

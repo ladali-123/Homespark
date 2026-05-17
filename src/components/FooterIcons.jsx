@@ -4,7 +4,7 @@ import React from "react";
 // consistently available nahi hote.
 // Is file me safe fallback icons diye gaye hain taaki Footer build crash na ho.
 
-function FacebookIcon(props) {
+export function FacebookIcon(props) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -17,7 +17,7 @@ function FacebookIcon(props) {
   );
 }
 
-function InstagramIcon(props) {
+export function InstagramIcon(props) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -30,7 +30,7 @@ function InstagramIcon(props) {
   );
 }
 
-function YoutubeIcon(props) {
+export function YoutubeIcon(props) {
   return (
     <svg
       viewBox="0 0 24 24"

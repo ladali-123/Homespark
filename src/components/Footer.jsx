@@ -5,7 +5,7 @@ import logo from "../assets/logo.png";
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-[#852e0c] text-white pt-14 pb-6 px-4 overflow-hidden">
+        <footer className="w-full bg-[#973610] text-white pt-14 pb-6 px-4 overflow-hidden">
 
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 

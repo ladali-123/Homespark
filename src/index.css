@@ -3,3 +3,182 @@ html, body {
   overflow-x: hidden;
   max-width: 100%;
 }
+/* src/index.css - ye sab add karo */
+
+@keyframes floatUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulseRing {
+  0%, 100% { transform: scale(1);    opacity: 1;   }
+  50%       { transform: scale(1.12); opacity: 0.5; }
+}
+
+@keyframes bobble {
+  0%, 100% { transform: translateY(0);   }
+  50%       { transform: translateY(-8px); }
+}
+
+.hero-section {
+  background: #fff7ed;
+  border: 0.5px solid #fed7aa;
+  border-radius: 20px;
+  margin: 24px 16px;
+  padding: 52px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid #fb923c;
+  opacity: 0.12;
+  animation: pulseRing 5s ease-in-out infinite;
+}
+.hero-ring-1 { width: 380px; height: 380px; top: -140px; right: -100px; }
+.hero-ring-2 { width: 240px; height: 240px; top: -60px;  right: 40px;  animation-delay: 1.5s; }
+.hero-ring-3 { width: 140px; height: 140px; top: 20px;   right: 140px; animation-delay: 3s;   }
+
+.hero-blob {
+  position: absolute;
+  border-radius: 50%;
+  background: #fb923c;
+  opacity: 0.05;
+}
+.hero-blob-1 { width: 300px; height: 300px; bottom: -100px; left: -80px; }
+.hero-blob-2 { width: 160px; height: 160px; bottom: 20px;   left: 120px; }
+
+.hero-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 240px;
+  animation: floatUp 0.55s ease both;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ffedd5;
+  color: #c2410c;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 0.5px solid #fdba74;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #1c1917;
+  margin-bottom: 16px;
+}
+.hero-title .text-orange-600 { color: #ea580c; }
+.hero-title .text-orange-500 { color: #f97316; }
+
+.hero-desc {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #78716c;
+  margin-bottom: 28px;
+  max-width: 480px;
+}
+.hero-desc strong { color: #ea580c; }
+
+.hero-btns {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.btn-orange {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 22px;
+  border-radius: 12px;
+  background: #ea580c;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.15s;
+  text-decoration: none;
+}
+.btn-orange:hover { background: #c2410c; transform: translateY(-2px); }
+
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 11px 22px;
+  border-radius: 12px;
+  background: #25D366;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s, transform 0.15s;
+  text-decoration: none;
+}
+.btn-wa:hover { background: #1DA851; transform: translateY(-2px); }
+
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: #92400e;
+}
+.trust-item span { color: #f97316; font-weight: 600; }
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  animation: floatUp 0.55s 0.2s ease both;
+}
+
+.stat-card {
+  background: #fff;
+  border: 0.5px solid #fed7aa;
+  border-radius: 16px;
+  padding: 18px 28px;
+  text-align: center;
+  animation: bobble 4s ease-in-out infinite;
+  min-width: 148px;
+}
+.stat-card:nth-child(2) { animation-delay: 1.3s; }
+.stat-card:nth-child(3) { animation-delay: 2.6s; }
+
+.stat-num   { font-size: 30px; font-weight: 500; color: #ea580c; }
+.stat-label { font-size: 11px; color: #a8a29e; margin-top: 3px; }
+
+@media (max-width: 600px) {
+  .hero-section { padding: 36px 20px; margin: 16px 8px; }
+  .hero-title   { font-size: 26px; }
+  .hero-inner   { flex-direction: column; }
+  .hero-right   { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+  .stat-card    { min-width: 120px; padding: 14px 20px; }
+}
