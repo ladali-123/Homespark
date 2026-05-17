@@ -9,6 +9,7 @@ import Products from "./components/Products";
 import Blog from "./components/Blog";
 import Review from "./components/Review";
 import Footer from "./components/Footer";
+import ProductsPage from "./components/ProductsPage";
 
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/servicepage" element={<ServicePage />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/productspage" element={<ProductsPage />} />
+          <Route path="/product" element={<ProductsPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/review" element={<Review />} />
         </Routes>

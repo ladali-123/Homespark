@@ -1,27 +1,55 @@
-import { FacebookIcon, InstagramIcon, YoutubeIcon } from "./FooterIcons";
-
-
 import logo from "../assets/logo.png";
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-[#973610] text-white pt-14 pb-6 px-4 overflow-hidden">
+        <footer className="w-full bg-[#973610] text-white pt-14 pb-6 px-4">
 
             <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
 
                 {/* LEFT SECTION */}
                 <div>
-                    <img
-                        src={logo}
-                        alt="Nexus Logo"
-                        className="w-[200px] mb-6"
-                    />
+                    <img src={logo} alt="Logo" className="w-[200px] mb-6" />
 
-                    <p className="text-gray-200 leading-8 text-[15px]">
+                    <p className="text-gray-200 text-[15px] leading-7 text-justify">
                         We provide premium RO water purifiers with advanced
                         technology, stylish designs, and trusted purification
                         solutions for homes and offices.
                     </p>
+
+                    {/* SOCIAL ICONS */}
+                    <div className="flex items-center gap-4 mt-5">
+
+                        {/* Facebook */}
+                        <a
+                            href="#"
+                            className="w-9 h-9 flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-[#973610] transition"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                                <path d="M22 12a10 10 0 10-11.5 9.9v-7H8v-3h2.5V9.5A3.5 3.5 0 0114 6h2v3h-2a1 1 0 00-1 1V12h3l-.5 3H13v7A10 10 0 0022 12z" />
+                            </svg>
+                        </a>
+
+                        {/* Instagram */}
+                        <a
+                            href="#"
+                            className="w-9 h-9 flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-[#973610] transition"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                                <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zM12 7a5 5 0 110 10 5 5 0 010-10z" />
+                            </svg>
+                        </a>
+
+                        {/* YouTube */}
+                        <a
+                            href="#"
+                            className="w-9 h-9 flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-[#973610] transition"
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+                                <path d="M23 12s0-3.5-.4-5.1a3 3 0 00-2.1-2.1C18.9 4.5 12 4.5 12 4.5s-6.9 0-8.5.3A3 3 0 001.4 6.9C1 8.5 1 12 1 12s0 3.5.4 5.1a3 3 0 002.1 2.1c1.6.3 8.5.3 8.5.3s6.9 0 8.5-.3a3 3 0 002.1-2.1C23 15.5 23 12 23 12zM10 15.5v-7l6 3.5-6 3.5z" />
+                            </svg>
+                        </a>
+
+                    </div>
                 </div>
 
                 {/* QUICK LINKS */}
@@ -31,108 +59,78 @@ export default function Footer() {
                         <span className="absolute left-0 -bottom-2 w-16 h-[2px] bg-white"></span>
                     </h3>
 
-                    <ul className="space-y-4 text-gray-200 mt-8">
-                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
-                            Home
-                        </li>
-
-                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
-                            About Us
-                        </li>
-
-                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
-                            Products
-                        </li>
-
-                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
-                            Blogs
-                        </li>
-
-                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
-                            Contact Us
-                        </li>
+                    <ul className="space-y-3 text-gray-200 mt-8">
+                        <li className="hover:underline cursor-pointer">Home</li>
+                        <li className="hover:underline cursor-pointer">About Us</li>
+                        <li className="hover:underline cursor-pointer">Products</li>
+                        <li className="hover:underline cursor-pointer">Blogs</li>
+                        <li className="hover:underline cursor-pointer">Contact</li>
                     </ul>
                 </div>
 
-                {/* POPULAR CATEGORIES */}
+                {/* CATEGORIES */}
                 <div>
                     <h3 className="text-2xl font-semibold relative inline-block">
-                        Popular Categories
+                        Categories
                         <span className="absolute left-0 -bottom-2 w-16 h-[2px] bg-white"></span>
                     </h3>
 
-                    <ul className="space-y-4 text-gray-200 mt-8">
-                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
-                            Water Purifiers
-                        </li>
-
-                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
-                            RO Filters
-                        </li>
-
-                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
-                            Accessories
-                        </li>
-
-                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
-                            Spare Parts
-                        </li>
+                    <ul className="space-y-3 text-gray-200 mt-8">
+                        <li className="hover:underline cursor-pointer">Water Purifiers</li>
+                        <li className="hover:underline cursor-pointer">RO Filters</li>
+                        <li className="hover:underline cursor-pointer">Accessories</li>
+                        <li className="hover:underline cursor-pointer">Spare Parts</li>
                     </ul>
                 </div>
 
-                {/* SOCIAL + POLICIES */}
+                {/* FIND US + MAP */}
                 <div>
+
                     <h3 className="text-2xl font-semibold relative inline-block">
-                        Follow Us
+                        Find Us
                         <span className="absolute left-0 -bottom-2 w-16 h-[2px] bg-white"></span>
                     </h3>
 
-                    {/* SOCIAL ICONS */}
-                    <div className="flex items-center gap-4 mt-8">
+                    {/* MAP */}
+                    <div className="mt-6">
 
                         <a
-                            href="#"
-                            className="w-11 h-11 rounded-full border border-white flex items-center
-                             justify-center hover:bg-white hover:text-[#73390a] transition duration-300"
+                            href="https://www.google.com/maps/search/?api=1&query=Shiv+Nagar,+Central+Jail,+Road+No.+8,+Beur,+Patna"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block rounded-xl overflow-hidden border border-white/30 hover:scale-[1.02] transition"
                         >
-                            <FacebookIcon size={20} />
 
-                        </a>
+                            <div className="w-full h-40">
+                                <iframe
+                                    title="Location Map"
+                                    src="https://www.google.com/maps?q=Shiv%20Nagar%20Beur%20Patna&output=embed"
+                                    width="100%"
+                                    height="100%"
+                                    style={{ border: 0 }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </div>
 
-                        <a
-                            href="#"
-                            className="w-11 h-11 rounded-full border border-white flex items-center 
-                            justify-center hover:bg-white hover:text-[#73390a] transition duration-300"
-                        >
-                            <InstagramIcon size={20} />
-                        </a>
+                            <div className="p-3 bg-white/10 backdrop-blur-md text-xs text-gray-200 leading-4">
+                                Shiv Nagar, Central Jail Road No. 8, Beur, Patna, Bihar 800002  
+                                <br />
+                                👉 Click to open map
+                            </div>
 
-                        <a
-                            href="#"
-                            className="w-11 h-11 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[#73390a] transition duration-300"
-                        >
-                            <YoutubeIcon size={20} />
                         </a>
                     </div>
 
-                    {/* POLICY LINKS */}
-                    <div className="mt-8 space-y-4 text-gray-200">
-                        <p className="hover:underline underline-offset-4 decoration-2 transition-all 
-                        cursor-pointer">
-                            Privacy Policy
-                        </p>
-
-                        <p className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
-                            Terms & Conditions
-                        </p>
-                    </div>
                 </div>
             </div>
 
             {/* BOTTOM */}
-            <div className="border-t border-white/20 mt-12 pt-5 text-center text-gray-300 text-sm">
+            <div className="border-t border-white/20 mt-10 pt-4 text-center text-gray-300 text-sm">
                 © 2025 Nexus Water Purifier. All Rights Reserved.
             </div>
+
         </footer>
     );
 }

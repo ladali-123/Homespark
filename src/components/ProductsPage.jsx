@@ -1,6 +1,10 @@
 import pure from '../assets/pure.png';
 import filter from '../assets/filter.png';
 import accessory from '../assets/accesory.png';
+
+import Goods from "./Goods";
+
+
 export default function ProductsPage() {
   const categories = [
     {
@@ -75,7 +79,8 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
-  
+
+      <Goods/>
     </div>
   );
 }

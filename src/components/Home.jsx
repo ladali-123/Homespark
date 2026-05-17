@@ -17,11 +17,13 @@ const images = [
 
 import AboutUs from "./AboutUs";
 import Services from "./Services";
-import Products from "./Products";
+
 import ProductInfo from "./ProductInfo";
+import Products from "./Products";
 
 import Review from "./Review";
 import ContactUs from "./ContactUs";
+
 
 export default function Home() {
   return (
@@ -31,8 +33,7 @@ export default function Home() {
       <Services />
       <Products />
       <ProductInfo />
-      
-      <Review/>
+      <Review />
       <ContactUs />
     </div>
   );
@@ -99,11 +100,10 @@ function HomeCarousel() {
               <button
                 key={index}
                 onClick={() => setCurrent(index)}
-                className={`transition-all duration-300 rounded-full ${
-                  current === index
+                className={`transition-all duration-300 rounded-full ${current === index
                     ? "w-5 sm:w-6 h-2 bg-white"
                     : "w-2 h-2 bg-white/50"
-                }`}
+                  }`}
               />
             ))}
           </div>
