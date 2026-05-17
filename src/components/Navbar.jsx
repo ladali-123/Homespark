@@ -158,7 +158,7 @@ export default function Navbar() {
           {/* Mobile Service Button */}
           <li className="pt-2">
             <Link
-              to="/services"
+              to="/servicepage"
               onClick={() => setMenuOpen(false)}
               className="
                 block text-center

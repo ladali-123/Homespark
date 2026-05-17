@@ -32,23 +32,23 @@ export default function Footer() {
                     </h3>
 
                     <ul className="space-y-4 text-gray-200 mt-8">
-                        <li className="hover:text-pink-300 transition cursor-pointer">
+                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
                             Home
                         </li>
 
-                        <li className="hover:text-pink-300 transition cursor-pointer">
+                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
                             About Us
                         </li>
 
-                        <li className="hover:text-pink-300 transition cursor-pointer">
+                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
                             Products
                         </li>
 
-                        <li className="hover:text-pink-300 transition cursor-pointer">
+                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
                             Blogs
                         </li>
 
-                        <li className="hover:text-pink-300 transition cursor-pointer">
+                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
                             Contact Us
                         </li>
                     </ul>
@@ -62,19 +62,19 @@ export default function Footer() {
                     </h3>
 
                     <ul className="space-y-4 text-gray-200 mt-8">
-                        <li className="hover:text-pink-300 transition cursor-pointer">
+                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
                             Water Purifiers
                         </li>
 
-                        <li className="hover:text-pink-300 transition cursor-pointer">
+                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
                             RO Filters
                         </li>
 
-                        <li className="hover:text-pink-300 transition cursor-pointer">
+                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
                             Accessories
                         </li>
 
-                        <li className="hover:text-pink-300 transition cursor-pointer">
+                        <li className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
                             Spare Parts
                         </li>
                     </ul>
@@ -92,7 +92,8 @@ export default function Footer() {
 
                         <a
                             href="#"
-                            className="w-11 h-11 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[#0A2E73] transition duration-300"
+                            className="w-11 h-11 rounded-full border border-white flex items-center
+                             justify-center hover:bg-white hover:text-[#73390a] transition duration-300"
                         >
                             <FacebookIcon size={20} />
 
@@ -100,14 +101,15 @@ export default function Footer() {
 
                         <a
                             href="#"
-                            className="w-11 h-11 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[#0A2E73] transition duration-300"
+                            className="w-11 h-11 rounded-full border border-white flex items-center 
+                            justify-center hover:bg-white hover:text-[#73390a] transition duration-300"
                         >
                             <InstagramIcon size={20} />
                         </a>
 
                         <a
                             href="#"
-                            className="w-11 h-11 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[#0A2E73] transition duration-300"
+                            className="w-11 h-11 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-[#73390a] transition duration-300"
                         >
                             <YoutubeIcon size={20} />
                         </a>
@@ -115,11 +117,12 @@ export default function Footer() {
 
                     {/* POLICY LINKS */}
                     <div className="mt-8 space-y-4 text-gray-200">
-                        <p className="hover:text-pink-300 transition cursor-pointer">
+                        <p className="hover:underline underline-offset-4 decoration-2 transition-all 
+                        cursor-pointer">
                             Privacy Policy
                         </p>
 
-                        <p className="hover:text-pink-300 transition cursor-pointer">
+                        <p className="hover:underline underline-offset-4 decoration-2 transition-all cursor-pointer">
                             Terms & Conditions
                         </p>
                     </div>

@@ -30,7 +30,7 @@ export default function Hero() {
 
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-6 py-6 mt-20 lg:px-10">
+      <div className="relative mx-auto max-w-7xl px-6 py-6  lg:px-10">
 
         <div className="grid items-center gap-14 lg:grid-cols-2">
 

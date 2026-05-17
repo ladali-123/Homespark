@@ -11,7 +11,7 @@ export default function AboutSection() {
   ];
 
   return (
-    <section className="py-16 px-6 lg:px-20 bg-gradient-to-b from-white to-orange-50 overflow-hidden">
+    <section className="sm:py-16 py-8 px-6 lg:px-20 bg-gradient-to-b from-white to-orange-50 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16">
 
         {/* LEFT IMAGE */}

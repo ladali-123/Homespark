@@ -19,7 +19,7 @@ import AboutUs from "./AboutUs";
 import Services from "./Services";
 import Products from "./Products";
 import ProductInfo from "./ProductInfo";
-import Blog from "./Blog";
+
 import Review from "./Review";
 import ContactUs from "./ContactUs";
 
@@ -31,7 +31,7 @@ export default function Home() {
       <Services />
       <Products />
       <ProductInfo />
-      <Blog />
+      
       <Review/>
       <ContactUs />
     </div>
