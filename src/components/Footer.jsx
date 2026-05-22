@@ -130,16 +130,111 @@ export default function Footer() {
                 {/* CATEGORIES */}
                 <div>
                     <h3 className="text-2xl font-semibold relative inline-block">
-                        Categories
+                        Contact Us
                         <span className="absolute left-0 -bottom-2 w-16 h-[2px] bg-white"></span>
                     </h3>
 
-                    <ul className="space-y-3 text-gray-200 mt-8">
-                        <li className="hover:underline cursor-pointer">Water Purifiers</li>
-                        <li className="hover:underline cursor-pointer">RO Filters</li>
-                        <li className="hover:underline cursor-pointer">Accessories</li>
-                        <li className="hover:underline cursor-pointer">Spare Parts</li>
-                    </ul>
+                  <div className="mt-8 space-y-5 text-gray-200">
+
+    {/* Phone */}
+    <div className="flex items-start gap-3">
+
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.8}
+            stroke="currentColor"
+            className="w-5 h-5 mt-1 shrink-0"
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a1.5 1.5 0 001.5-1.5v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106a1.5 1.5 0 00-1.465.417l-.97.97a12.035 12.035 0 01-5.516-5.516l.97-.97a1.5 1.5 0 00.417-1.465L8.056 3.602A1.5 1.5 0 006.966 2.75H5.25a1.5 1.5 0 00-1.5 1.5v2.5z"
+            />
+        </svg>
+
+        <div>
+           
+            <a
+                href="tel:+919876543210"
+                className="text-gray-200 hover:underline"
+            >
+                +91 98765 43210
+            </a>
+        </div>
+    </div>
+
+    {/* Email */}
+    <div className="flex items-start gap-3">
+
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.8}
+            stroke="currentColor"
+            className="w-5 h-5 mt-1 shrink-0"
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 0 01-.876 1.782l-7.5 5.625a2.25 2.25 0 01-2.748 0l-7.5-5.625A2.25 2.25 0 012.25 6.993V6.75"
+            />
+        </svg>
+
+        <div>
+          
+
+            <a
+                href="mailto:homesparco@gmail.com"
+                className="text-gray-200 hover:underline break-all"
+            >
+                homesparco@gmail.com
+            </a>
+        </div>
+    </div>
+
+    {/* Location */}
+    <div className="flex items-start gap-3">
+
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth={1.8}
+            stroke="currentColor"
+            className="w-5 h-5 mt-1 shrink-0"
+        >
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+            <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+            />
+        </svg>
+
+        <div>
+            
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Shiv+Nagar+Beur+Patna"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-200 hover:underline leading-6"
+            >
+                Shiv Nagar, Central Jail, Road No. 8,
+                behind Of Shivam Vihar Colony,
+                Beur, Patna, Bihar 800002
+            </a>
+        </div>
+    </div>
+
+</div>
                 </div>
 
                 {/* FIND US + MAP */}
