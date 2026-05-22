@@ -24,6 +24,7 @@ function App() {
 
       {/* Main Content */}
       <main className={`flex-grow ${isHome ? "" : "pt-20"}`}>
+        {isHome && <Popup />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
@@ -33,7 +34,7 @@ function App() {
           <Route path="/product" element={<ProductsPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/review" element={<Review />} />
-          <Route path="/popup" element={<popup />} />
+          <Route path="/popup" element={<Popup />} />
         </Routes>
       </main>
 
