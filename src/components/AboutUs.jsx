@@ -12,9 +12,11 @@ export default function AboutSection() {
 
   return (
     <section className="sm:py-16 py-8 px-6 lg:px-20 bg-gradient-to-b from-white to-orange-50 overflow-hidden">
-      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16">
+      
+      {/* Mobile: Image Top | Desktop: Image Right */}
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center gap-16">
 
-        {/* LEFT IMAGE */}
+        {/* IMAGE SECTION */}
         <div className="flex-1 flex justify-center relative w-full">
 
           {/* Background Blur */}
@@ -34,7 +36,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        {/* RIGHT CONTENT */}
+        {/* CONTENT SECTION */}
         <div className="flex-1">
 
           <p className="text-orange-600 font-bold tracking-widest uppercase text-2xl mb-5">
@@ -42,10 +44,9 @@ export default function AboutSection() {
           </p>
 
           {/* Founder */}
-          <p className="text-gray-800 font-semibold text-lg mb-2">
-            Founder & CEO – Amardeep Kumar Byahut
-          </p>
+          
 
+          {/* Description */}
           <p className="text-gray-600 leading-relaxed mb-8 text-lg text-justify">
             HomeSpark is a trusted provider of advanced water purification solutions,
             specializing in RO water purifiers, filters, and complete water treatment systems.
@@ -58,10 +59,13 @@ export default function AboutSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
             {features.map((feature, index) => (
               <div key={index} className="flex items-center gap-3">
+                
+                {/* Dot */}
                 <div className="w-5 h-5 rounded-full bg-orange-600 flex items-center justify-center flex-shrink-0">
                   <div className="w-2 h-2 rounded-full bg-white"></div>
                 </div>
 
+                {/* Feature Text */}
                 <p className="text-gray-700 font-medium text-sm">
                   {feature}
                 </p>
@@ -71,11 +75,13 @@ export default function AboutSection() {
 
           {/* BUTTON */}
           <a
-            href="/about"
-            className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-orange-300"
+            href="/contact"
+            className="inline-flex items-center gap-2 bg-orange-600 hover:bg-orange-700
+             text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-orange-300"
           >
-            Read More
+            Contact Us
           </a>
+
         </div>
 
       </div>

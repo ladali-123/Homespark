@@ -10,7 +10,7 @@ import Blog from "./components/Blog";
 import Review from "./components/Review";
 import Footer from "./components/Footer";
 import ProductsPage from "./components/ProductsPage";
-
+import Popup from "./components/Popup";
 
 function App() {
   const location = useLocation();
@@ -33,6 +33,7 @@ function App() {
           <Route path="/product" element={<ProductsPage />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/review" element={<Review />} />
+          <Route path="/popup" element={<popup />} />
         </Routes>
       </main>
 

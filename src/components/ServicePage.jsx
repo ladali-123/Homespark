@@ -38,7 +38,8 @@ export default function Hero() {
           <div>
 
             {/* Badge */}
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-orange-200 bg-white/80 px-4 py-2 text-sm font-medium text-orange-700 shadow-sm backdrop-blur">
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-orange-200
+             bg-white/80 px-4 py-2 text-sm font-medium text-orange-700 shadow-sm backdrop-blur">
               <ShieldCheck size={16} />
               Patna’s trusted RO water service
             </div>
@@ -55,7 +56,7 @@ export default function Hero() {
             <p className="mt-6 max-w-lg text-base leading-7 text-gray-600">
               Expert RO installation, repair and maintenance services
               across Patna with genuine spare parts and same-day support —
-              starting at just ₹199.
+              starting at just ₹299.
             </p>
 
             {/* Buttons */}
@@ -68,7 +69,9 @@ export default function Hero() {
                     .getElementById("contact")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="group flex items-center gap-2 rounded-xl bg-orange-600 px-6 py-3 text-sm font-medium text-white shadow-lg transition-all duration-300 hover:scale-105 hover:bg-orange-700"
+                className="group flex items-center gap-2 rounded-xl bg-orange-600 px-6 py-3 text-sm
+                 font-medium text-white shadow-lg transition-all duration-300 hover:scale-105
+                  hover:bg-orange-700"
               >
                 <CalendarDays
                   size={18}
@@ -82,7 +85,9 @@ export default function Hero() {
                 href={`https://wa.me/${WHATSAPP}`}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-6 py-3 text-sm font-medium text-gray-700 shadow-sm transition-all duration-300 hover:scale-105 hover:border-green-300 hover:text-green-600"
+                className="group flex items-center gap-2 rounded-xl border border-gray-200 bg-white px-6 
+                py-3 text-sm font-medium text-gray-700 shadow-sm transition-all duration-300 hover:scale-105
+                 hover:border-green-300 hover:text-green-600"
               >
                 <MessageCircle
                   size={18}
@@ -125,9 +130,10 @@ export default function Hero() {
               {/* top */}
               <div className="grid gap-5 sm:grid-cols-2">
 
-                <div className="rounded-2xl bg-[#faf7f2] p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <div className="rounded-2xl bg-[#faf7f2] p-6 transition-all duration-300 hover:-translate-y-1 
+                hover:shadow-md">
                   <p className="text-3xl font-semibold text-orange-600">
-                    ₹199
+                    ₹299
                   </p>
 
                   <p className="mt-2 text-sm text-gray-500">

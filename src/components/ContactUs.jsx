@@ -6,7 +6,7 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto">
 
         {/* Heading */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 uppercase tracking-wide">
             Get In Touch With Us
           </h2>
@@ -21,70 +21,48 @@ export default function ContactSection() {
               Fill the form to get connected
             </h3>
 
-            <form className="space-y-6">
+            <form className="space-y-8">
 
-              {/* ROW 1 */}
+              {/* Name + Phone */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-                {/* Name */}
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Name"
-                    className="w-full bg-transparent border-b border-[#0A2E73] outline-none py-3 text-gray-700 placeholder:text-[#6b7ba5]"
-                  />
-                </div>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  className="w-full bg-transparent border-b border-[#0A2E73] outline-none px-2 py-3 text-gray-700 placeholder:text-[#6b7ba5]"
+                />
 
-                {/* Email */}
-                <div>
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    className="w-full bg-transparent border-b border-[#0A2E73] outline-none py-3 text-gray-700 placeholder:text-[#6b7ba5]"
-                  />
-                </div>
+                <input
+                  type="text"
+                  placeholder="Phone"
+                  className="w-full bg-transparent border-b border-[#0A2E73] outline-none px-2 py-3 text-gray-700 placeholder:text-[#6b7ba5]"
+                />
               </div>
 
-              {/* ROW 2 */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-
-                {/* Phone */}
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Phone"
-                    className="w-full bg-transparent border-b border-[#0A2E73] outline-none py-3 text-gray-700 placeholder:text-[#6b7ba5]"
-                  />
-                </div>
-
-                {/* Subject */}
-                <div>
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    className="w-full bg-transparent border-b border-[#0A2E73] outline-none py-3 text-gray-700 placeholder:text-[#6b7ba5]"
-                  />
-                </div>
-              </div>
+              {/* Address */}
+              <input
+                type="text"
+                placeholder="Address"
+                className="w-full bg-transparent border-b border-[#0A2E73] outline-none px-2 py-3 text-gray-700 placeholder:text-[#6b7ba5]"
+              />
 
               {/* Message */}
-              <div>
-                <textarea
-                  rows={4}
-                  placeholder="Message"
-                  className="w-full bg-transparent border-b border-[#0A2E73] outline-none py-3 resize-none text-gray-700 placeholder:text-[#6b7ba5]"
-                ></textarea>
-              </div>
+              <textarea
+                rows={3}
+                placeholder="Message"
+                className="w-full bg-transparent border-b border-[#0A2E73] outline-none px-2 py-3 resize-none text-gray-700 placeholder:text-[#6b7ba5]"
+              />
 
               {/* Button */}
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="bg-orange-600 hover:bg-orange-700 text-white px-10 py-3 rounded-full text-lg font-semibold transition-all duration-300 shadow-md"
+                  className="bg-orange-600 hover:bg-orange-700 text-white px-10 py-3 rounded-lg text-lg font-semibold transition-all duration-300 shadow-md"
                 >
                   SUBMIT
                 </button>
               </div>
+
             </form>
           </div>
 
@@ -96,6 +74,7 @@ export default function ContactSection() {
               className="w-full max-w-[500px] object-contain"
             />
           </div>
+
         </div>
       </div>
     </section>

@@ -33,32 +33,44 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-20">
 
           {/* Logo */}
-          <div className="flex items-center flex-shrink-0">
-            <img
-              src={logo}
-              alt="Logo"
-              className="h-16 w-auto object-contain"
-              onError={(e) => {
-                e.target.style.display = "none";
-                e.target.nextSibling.style.display = "flex";
-              }}
-            />
+          {/* Logo */}
+<div className="flex items-center flex-shrink-0 gap-2">
+  <img
+    src={logo}
+    alt="Logo"
+    className="md:h-18 h-16 w-auto object-contain"
+    onError={(e) => {
+      e.target.style.display = "none";
+      e.target.nextSibling.style.display = "flex";
+    }}
+  />
 
-            {/* Fallback Logo */}
-            <div
-              className="hidden items-center gap-2"
-              style={{ display: "none" }}
-            >
-              <div className="h-9 w-9 rounded-lg bg-blue-600 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">HS</span>
-              </div>
+  {/* HomeSpark Text */}
+  <span
+    className="
+       text-2xl md:text-3xl font-bold mt-3
+      bg-gradient-to-r from-blue-950 via-blue-900 to-blue-800
+      bg-clip-text text-transparent
+      tracking-wide
+    "
+  >
+    HomeSpark
+  </span>
 
-              <span className="text-gray-800 font-bold text-xl">
-                Home Spark
-              </span>
-            </div>
-          </div>
+  {/* Fallback Logo */}
+  <div
+    className="hidden items-center gap-2"
+    style={{ display: "none" }}
+  >
+    <div className="h-9 w-9 rounded-lg bg-blue-600 flex items-center justify-center">
+      <span className="text-white font-bold text-sm">HS</span>
+    </div>
 
+    <span className="text-gray-800 font-bold text-xl">
+      Home Spark
+    </span>
+  </div>
+</div>
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (

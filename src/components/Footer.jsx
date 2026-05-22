@@ -1,4 +1,5 @@
 import logo from "../assets/logo.png";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -8,7 +9,24 @@ export default function Footer() {
 
                 {/* LEFT SECTION */}
                 <div>
-                    <img src={logo} alt="Logo" className="w-[200px] mb-6" />
+
+                    {/* LOGO + NAME (FIXED) */}
+                    <div className="flex items-center gap-2 mb-2">
+
+                        <img
+                            src={logo}
+                            alt="Logo"
+                            className="md:w-[90px] w-[80px]"
+                        />
+
+                        <h2
+                            className="text-2xl md:text-3xl font-bold bg-gradient-to-r
+        from-blue-950 via-blue-900 to-blue-800 bg-clip-text text-transparent"
+                        >
+                            HomeSpark
+                        </h2>
+
+                    </div>
 
                     <p className="text-gray-200 text-[15px] leading-7 text-justify">
                         We provide premium RO water purifiers with advanced
@@ -21,7 +39,7 @@ export default function Footer() {
 
                         {/* Facebook */}
                         <a
-                            href="#"
+                            href="https://www.facebook.com/homesparkpatna"
                             className="w-9 h-9 flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-[#973610] transition"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -31,7 +49,7 @@ export default function Footer() {
 
                         {/* Instagram */}
                         <a
-                            href="#"
+                            href="https://www.instagram.com/_homespark/"
                             className="w-9 h-9 flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-[#973610] transition"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -41,7 +59,7 @@ export default function Footer() {
 
                         {/* YouTube */}
                         <a
-                            href="#"
+                            href="https://youtube.com/@homespark-s1y?si=7EyJAqu0dHxxm3iP"
                             className="w-9 h-9 flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-[#973610] transition"
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
@@ -53,6 +71,7 @@ export default function Footer() {
                 </div>
 
                 {/* QUICK LINKS */}
+                {/* QUICK LINKS */}
                 <div>
                     <h3 className="text-2xl font-semibold relative inline-block">
                         Quick Links
@@ -60,14 +79,54 @@ export default function Footer() {
                     </h3>
 
                     <ul className="space-y-3 text-gray-200 mt-8">
-                        <li className="hover:underline cursor-pointer">Home</li>
-                        <li className="hover:underline cursor-pointer">About Us</li>
-                        <li className="hover:underline cursor-pointer">Products</li>
-                        <li className="hover:underline cursor-pointer">Blogs</li>
-                        <li className="hover:underline cursor-pointer">Contact</li>
+
+                        <li>
+                            <Link
+                                to="/"
+                                className="hover:underline cursor-pointer inline-block"
+                            >
+                                Home
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                to="/about"
+                                className="hover:underline cursor-pointer inline-block"
+                            >
+                                About Us
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                to="/productspage"
+                                className="hover:underline cursor-pointer inline-block"
+                            >
+                                Products
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                to="/blog"
+                                className="hover:underline cursor-pointer inline-block"
+                            >
+                                Blogs
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link
+                                to="/contact"
+                                className="hover:underline cursor-pointer inline-block"
+                            >
+                                Contact
+                            </Link>
+                        </li>
+
                     </ul>
                 </div>
-
                 {/* CATEGORIES */}
                 <div>
                     <h3 className="text-2xl font-semibold relative inline-block">
@@ -115,7 +174,7 @@ export default function Footer() {
                             </div>
 
                             <div className="p-3 bg-white/10 backdrop-blur-md text-xs text-gray-200 leading-4">
-                                Shiv Nagar, Central Jail Road No. 8, Beur, Patna, Bihar 800002  
+                                Shiv Nagar, Central Jail Road No. 8, Beur, Patna, Bihar 800002
                                 <br />
                                 👉 Click to open map
                             </div>
